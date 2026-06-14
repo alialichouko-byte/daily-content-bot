@@ -5,7 +5,7 @@ from groq import Groq
 client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
 response = client.chat.completions.create(
-    model="llama3-8b-8192",
+    model="llama-3.3-70b-versatile",
     messages=[{
         "role": "user",
         "content": "اكتب منشوراً تعليمياً قصيراً عن الأمن السيبراني باللغة العربية مناسب لقناة Cyber Shell Script. يجب أن يكون مفيداً وشيقاً في 150 كلمة فقط. أضف إيموجي مناسبة."
